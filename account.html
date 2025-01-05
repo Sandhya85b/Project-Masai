@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./Styles/cart.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/sections.css">
+    <link rel="stylesheet" href="./Styles/account.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="img"
+                src="https://img.freepik.com/premium-vector/graceful-glow-monochrome-beauty-face-logo_68880-101572.jpg"
+                alt="GlowZone Logo">
+            <h2>GlowZoneCare</h2>
+
+            <ul class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html" id="cart-link">Cart <span id="cart-count">0</span></a>
+                <a href="wishlist.html">Wishlist <span id="wishlist-count">0</span></a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">Account</a>
+            </ul>
+        </nav>
+    </header>
+<header>
+    <h2>Manage Your Account</h2>
+</header>
+    <!-- Account Section -->
+    <section class="account-section">
+       
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <h3>Log In</h3>
+            <form id="login">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" style="display: none;">
+            <h3>Sign Up</h3>
+            <form id="signup">
+                <input type="text" id="signup-name" placeholder="Full Name" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+        </div>
+
+        <!-- Account Info -->
+        <div id="account-info" style="display: none;">
+            <h3>Welcome, <span id="user-name"></span></h3>
+            <p>Email: <span id="user-email"></span></p>
+            <button id="logout">Log Out</button>
+        </div>
+    </section>
+
+</body>
+
+<!-- Footer -->
+<footer style="position:fixed;">
+    <p>&copy; 2025 GlowZone. All Rights Reserved.</p>
+</footer>
+
+<script src="./Scripts/header.js"></script>
+<script src="./Scripts/nav.js"></script>
+<script src="./Scripts/sections.js"></script>
+<script src="./Scripts/wishlist.js"></script>
+<script src="./Scripts/products.js"></script>
+<script src="./Scripts/index.js"></script>
+<script src="./Scripts/cart.js"></script>
+<script src="./Scripts/account.js"></script>
+
+</html>

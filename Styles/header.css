@@ -1,0 +1,61 @@
+header{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 5%;
+    
+}
+/* ................styling for row1 */
+
+#row1{
+    display: flex;
+    margin: 0px;
+    padding:10px;
+    background-color: grey;
+    justify-content: center;
+}
+
+/*................. styling for row2 */
+/* #row2{
+   
+     display: flex;
+    margin: 0%;
+    gap: 4%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+#row2 > #nav{
+    margin: 2%;
+    display: flex;
+    transition: opacity 0.3s ease;
+    gap: 5%;
+    text-decoration: none;
+  color: black;    
+}
+
+#row2 > #search_bar{
+    width: 10%;
+    height: 5%;
+}
+
+
+/* #row2 > #search_bar{
+    width: 30%;
+} */ */
+
+
+
+/* .........................styling for row3 */
+
+#row3 {
+    background-color: cornflowerblue;
+   text-align: center;
+}
+
+#row3>select {
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+
