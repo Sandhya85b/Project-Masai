@@ -16,10 +16,36 @@
     "users": [
       {
         "id": 1,
-        "email": "esther@gmail.com",
+        "email": "js@gmail.com",
         "password": "password123"
       }
     ],
-    "cart": [],
-    "wishlist": []
+    "cart": [
+      {
+        "id": 1,
+        "name": "Glow Serum",
+        "price": 80,
+        "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS673boS4ow4GFZOm_EV484_F2IRi2s7D4__8t62T0qsMuj10P3S9w15CgREwdda6FCquVIXNnacKGlW1Fni4t8TJP-clIW1QFoVMIH9DtdkxQ7l1WjcyVzicc"
+      },
+      {
+        "id": 2,
+        "name": "Hydrating Moisturizer",
+        "price": 50,
+        "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cet/cet92804/v/24.jpg"
+      }
+    ],
+    "wishlist": [
+      {
+        "id": 1,
+        "name": "Glow Serum",
+        "price": 80,
+        "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS673boS4ow4GFZOm_EV484_F2IRi2s7D4__8t62T0qsMuj10P3S9w15CgREwdda6FCquVIXNnacKGlW1Fni4t8TJP-clIW1QFoVMIH9DtdkxQ7l1WjcyVzicc"
+      },
+      {
+        "id": 2,
+        "name": "Hydrating Moisturizer",
+        "price": 50,
+        "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cet/cet92804/v/24.jpg"
+      }
+    ]
   }

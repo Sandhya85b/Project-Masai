@@ -203,6 +203,7 @@ window.onload = function () {
 // Add to Cart
 window.addToCart = function (productId) {
   const product = products.find((item) => item.id === productId);
+  //!cart.some(...): The condition checks if there is no item in the cart array with an id equal to productId.
   if (product && !cart.some((item) => item.id === productId)) {
     cart.push(product);
     alert(`${product.name} has been added to your cart!`);
@@ -265,14 +266,33 @@ function clearCart() {
   alert("Your cart has been cleared!");
 }
 
+ // Section 2: Bestsellers
+ const bestsellers = products.slice(0, 3);
+ function displayBestsellers() {
+     displayProductsInSection("BestsellersProducts", bestsellers);
+ }
 
-// This is for section 2
-const session2 = document.getElementById("session2").addEventListener("click", () => {
-  if (true) {
-    window.location.href = "https://cdn.shopify.com/s/files/1/0569/2375/0423/t/5/assets/description_image_dos_and_dont_of_skincare_tips_at_home.jpeg?v=1648780179"
-  } else {
+ // Section 3: Button Click
+ const btnSection3 = document.getElementById("btnSection3");
+ btnSection3.addEventListener("click", () => {
+     window.location.href = "https://cdn.shopify.com/s/files/1/0569/2375/0423/t/5/assets/description_image_dos_and_dont_of_skincare_tips_at_home.jpeg?v=1648780179";
+ });
 
-  }
-})
+ // Search functionality
+ function handleSearch() {
+     const query = document.getElementById("searchBar").value.toLowerCase();
+     const filteredProducts = products.filter(product =>
+         product.name.toLowerCase().includes(query)
+     );
+     displayProductsInSection("searchResults", filteredProducts);
+ }
 
+ // Initialize search bar
+ document.getElementById("searchBar").addEventListener("input", handleSearch);
 
+ // Initialize the page
+ document.addEventListener("DOMContentLoaded", () => {
+     displayProductsInSection("productList", products);
+     displayBestsellers();
+     attachEventListeners();
+ });
