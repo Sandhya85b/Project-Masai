@@ -205,7 +205,9 @@ window.onload = function () {
   products.forEach(product => {
     const productDiv = document.createElement("div");
     productDiv.classList.add("product");
-
+   productDiv.style.padding="1%";
+    productDiv.style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+    
     productDiv.innerHTML = `
         <h3>${product.name}</h3>
         <img src="${product.imageUrl}" alt="${product.name}" style="width: 150px; height: 150px;">

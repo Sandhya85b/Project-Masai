@@ -4,3 +4,24 @@
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+#row3 > select:hover{
+    
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+section{
+    background-image: url();
+}
+button{
+    border: 2px solid cornflowerblue;
+    background-color: lightblue;
+    
+   
+}
+products:hover{
+    box-shadow: rgba(140, 140, 185, 0.1) 0px 4px 16px, rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 2) 0px 16px 56px;
+}
+button:hover{
+    
+    box-shadow: rgba(140, 140, 185, 0.1) 0px 4px 16px, rgba(17, 17, 26, 1) 0px 8px 24px, rgba(17, 17, 26, 2) 0px 16px 56px;
+}
