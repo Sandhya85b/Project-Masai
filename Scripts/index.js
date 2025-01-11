@@ -1,4 +1,23 @@
+// Search functionality
+function handleSearch() {
+  const query = document.getElementById("searchBar").value.toLowerCase();
+  const filteredProducts = products.filter(product =>
+      product.name.toLowerCase().includes(query)
+  );
+  displayProductsInSection("searchResults", filteredProducts);
+}
 
+// Initialize search bar
+document.getElementById("searchBar").addEventListener("input", handleSearch);
+
+// Initialize the page
+document.addEventListener("DOMContentLoaded", () => {
+  displayProductsInSection("productList", products);
+  displayBestsellers();
+  attachEventListeners();
+});
+
+//section1, section2 and section3
 window.onload = function () {
   const products = [
     {
@@ -266,11 +285,11 @@ function clearCart() {
   alert("Your cart has been cleared!");
 }
 
- // Section 2: Bestsellers
- const bestsellers = products.slice(0, 3);
- function displayBestsellers() {
-     displayProductsInSection("BestsellersProducts", bestsellers);
- }
+//  // Section 2: Bestsellers
+//  const bestsellers = products.slice(0, 3);
+//  function displayBestsellers() {
+//      displayProductsInSection("BestsellersProducts", bestsellers);
+//  }
 
  // Section 3: Button Click
  const btnSection3 = document.getElementById("btnSection3");
@@ -278,21 +297,4 @@ function clearCart() {
      window.location.href = "https://cdn.shopify.com/s/files/1/0569/2375/0423/t/5/assets/description_image_dos_and_dont_of_skincare_tips_at_home.jpeg?v=1648780179";
  });
 
- // Search functionality
- function handleSearch() {
-     const query = document.getElementById("searchBar").value.toLowerCase();
-     const filteredProducts = products.filter(product =>
-         product.name.toLowerCase().includes(query)
-     );
-     displayProductsInSection("searchResults", filteredProducts);
- }
-
- // Initialize search bar
- document.getElementById("searchBar").addEventListener("input", handleSearch);
-
- // Initialize the page
- document.addEventListener("DOMContentLoaded", () => {
-     displayProductsInSection("productList", products);
-     displayBestsellers();
-     attachEventListeners();
- });
+ 

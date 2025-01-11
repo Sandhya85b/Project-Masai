@@ -13,7 +13,7 @@
         "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cet/cet92804/v/24.jpg"
       }
     ],
-    "users": [
+    "account": [
       {
         "id": 1,
         "email": "js@gmail.com",
